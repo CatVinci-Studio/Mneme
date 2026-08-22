@@ -1,0 +1,29 @@
+# Local secrets
+.secrets/
+.env
+.env.*
+!.env.example
+
+# JavaScript
+**/node_modules/
+**/dist/
+**/coverage/
+
+# Rust / Tauri
+**/target/
+ui/src-tauri/gen/
+ui/src-tauri/binaries/
+
+# Local Mneme data
+**/vault/
+**/demo-vault/
+**/test-vault*/
+**/bin-test-vault/
+**/.index/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.tmp
