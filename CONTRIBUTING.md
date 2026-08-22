@@ -55,5 +55,5 @@ Comments should record invariants and failure modes rather than repeat the code.
 2. Update `CHANGELOG.md` and let Cargo update `Cargo.lock`.
 3. Run all checks and build the unsigned DMG with `npm run tauri build -- --bundles app,dmg`.
 4. Commit, tag `vX.Y.Z`, and push the tag.
-5. The release workflow publishes the DMG as a GitHub pre-release until signing/notarization is enabled.
+5. The release workflow publishes the unsigned DMG and the release notes must retain the Gatekeeper warning until signing/notarization is enabled.
 6. Update `CatVinci-Studio/homebrew-tap/Casks/mneme.rb` with the release DMG SHA-256.
